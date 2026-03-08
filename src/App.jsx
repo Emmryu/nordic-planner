@@ -1121,7 +1121,7 @@ export default function NordicPlanner() {
         {/* ═══ ROUTES ═══ */}
         {mainTab==="routes" && (
           <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
-          <div style={{maxWidth:"1000px"}}>
+          <div style={{maxWidth:"100%", margin:"0 auto"}}>
             <p style={{color:"#64748b",marginTop:0,marginBottom:"16px",fontSize:"12px",fontFamily:M.mono,maxWidth:"680px"}}>
               Four route architectures. All lock in Stockholm + Helsinki for the K+A Family meetup window. Click any stop's Details button to jump to that city.
             </p>
@@ -1213,7 +1213,7 @@ export default function NordicPlanner() {
         {/* ═══ COUNTRIES ═══ */}
         {mainTab==="countries" && (
           <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
-          <div style={{maxWidth:"1000px"}}>
+          <div style={{maxWidth:"100%", margin:"0 auto"}}>
             {/* Country selector */}
             <div style={{display:"flex",gap:"8px",marginBottom:"20px",flexWrap:"wrap"}}>
               {COUNTRIES.map(c=>(
@@ -1339,7 +1339,7 @@ export default function NordicPlanner() {
         {/* ═══ TRANSPORT ═══ */}
         {mainTab==="transport" && (
           <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
-          <div style={{maxWidth:"900px"}}>
+          <div style={{maxWidth:"100%", margin:"0 auto"}}>
             <p style={{color:"#64748b",marginTop:0,marginBottom:"20px",fontSize:"12px",fontFamily:M.mono,maxWidth:"680px",lineHeight:1.7}}>
               Ideal transport for each proposed route. Each leg shows the recommended option and why. Click any leg for full alternatives.
             </p>
@@ -1436,7 +1436,7 @@ export default function NordicPlanner() {
         {/* ═══ BUDGET & POINTS ═══ */}
         {mainTab==="budget" && (
           <div style={{flex:1,overflowY:"auto",padding:"20px 24px"}}>
-          <div style={{maxWidth:"900px"}}>
+          <div style={{maxWidth:"100%", margin:"0 auto"}}>
             <div style={{display:"flex",gap:"8px",marginBottom:"18px"}}>
               {Object.entries({low:"Points-Optimized",mid:"Mid-Range",high:"No Compromises"}).map(([k,l])=>(
                 <button key={k} onClick={()=>setBudgetTier(k)} style={{
